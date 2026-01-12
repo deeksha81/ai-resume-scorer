@@ -3,6 +3,12 @@ import SideBar from './components/SideBar/SideBar';
 import Dashboard from './components/Dashboard/Dashboard';
 import History from './components/History/History';
 import Admin from './components/Admin/Admin';
+import Login from './components/Login/Login';
+
+
+
+
+
 
 function App() {
   return (
@@ -12,9 +18,12 @@ function App() {
 
       <div style={{ flex: 1, padding: '20px' }}>
         <Routes>
+          
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/history" element= {<History />} />
+          <Route path="/admin" element= {<Admin />} />
+          <Route path='/' element ={<Login/>}/>
+
         </Routes>
       </div>
 
