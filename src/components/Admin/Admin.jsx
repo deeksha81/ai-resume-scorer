@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Admin.module.css';
 import Skeleton from '@mui/material/Skeleton';
+import WithAuthHOC from '../../utils/HOC/withAuthHOC';
 
 const Admin = () => {
   return (
@@ -93,4 +94,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+export default WithAuthHOC(Admin)
